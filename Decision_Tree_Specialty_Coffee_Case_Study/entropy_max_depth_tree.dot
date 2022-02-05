@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="spent_last_month <= 138.0\nentropy = 0.948\nsamples = 355\nvalue = [130, 225]\nclass = YES", fillcolor="#abd6f4"] ;
+1 [label="Distance <= 3.551\nentropy = 0.996\nsamples = 241\nvalue = [130, 111]\nclass = NO", fillcolor="#fbede2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="spent_last_month <= 23.5\nentropy = 0.519\nsamples = 86\nvalue = [10, 76]\nclass = YES", fillcolor="#53aae8"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 8\nvalue = [8, 0]\nclass = NO", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="entropy = 0.172\nsamples = 78\nvalue = [2, 76]\nclass = YES", fillcolor="#3ea0e6"] ;
+2 -> 4 ;
+5 [label="spent_last_month <= 101.0\nentropy = 0.771\nsamples = 155\nvalue = [120, 35]\nclass = NO", fillcolor="#eda673"] ;
+1 -> 5 ;
+6 [label="entropy = 0.144\nsamples = 98\nvalue = [96, 2]\nclass = NO", fillcolor="#e6843d"] ;
+5 -> 6 ;
+7 [label="entropy = 0.982\nsamples = 57\nvalue = [24, 33]\nclass = YES", fillcolor="#c9e4f8"] ;
+5 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 114\nvalue = [0, 114]\nclass = YES", fillcolor="#399de5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
